@@ -37,7 +37,7 @@ Function summary:
 4. decrypt_aes_ctr: Implements AES-CTR decryption manually using AES-ECB: Decode key and ciphertext from hex -> Split IV into nonce (8B) and counter (8B) -> For each 16-byte ciphertext block: Generate keystream, XOR keystream with ciphertext, Increment counter by 1 -> Join all plaintext bytes and decode to UTF-8.
 
 ## Plaintext:
-Plaintext 1: Basic CBC mode encryption needs padding.
-Plaintext 2: Our implementation uses rand. IV
-Plaintext 3: CTR mode lets you build a stream cipher from a block cipher.
-Plaintext 4: Always avoid the two time pad!
+1. Basic CBC mode encryption needs padding.
+2. Our implementation uses rand. IV
+3. CTR mode lets you build a stream cipher from a block cipher.
+4. Always avoid the two time pad!
