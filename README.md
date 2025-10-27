@@ -25,7 +25,7 @@ CTR Mode:
 1. The first 16 bytes of ciphertext are used as IV = nonce (8B) + initial counter (8B).
 2. For each 16-byte ciphertext block:
 Generate keystream = AES_ENC_k(nonce || counter_i)
-XOR ciphertext with keystream: Pi = Ci \oplus keystream_i
+XOR ciphertext with keystream: $Pi = C_{i} \oplus keystream_{i}$
 Increment counter: counter_(i+1) = counter_i + 1
 3. Join all plaintext blocks.
 
