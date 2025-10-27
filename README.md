@@ -1,15 +1,15 @@
 # AES in CBC and CTR — Decryptor
 ## How to build:
-python -m venv venv
-source venv/bin/activate        # Windows: venv\Scripts\activate
-pip install pycryptodome
+- python -m venv venv
+- source venv/bin/activate        # Windows: venv\Scripts\activate
+- pip install pycryptodome
 
 ## How to run:
 python aes_decrypt.py
 
 ## Libraries:
-PyCryptodome → AES block primitive (AES.MODE_ECB)
-binascii → Hex decoding (unhexlify)
+1. PyCryptodome → AES block primitive (AES.MODE_ECB)
+2. binascii → Hex decoding (unhexlify)
 
 ## How the decryption works (logic/steps):
 CBC Mode:
